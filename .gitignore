@@ -24,6 +24,8 @@ hs_err_pid*
 
 # IntelliJ IDEA files
 .idea
+*.iml
+target
 
 # MacOs files
 .DS_Store
