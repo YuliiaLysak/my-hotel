@@ -6,7 +6,7 @@ public class Room {
     private int id;
     private RoomType type;
     private String name;
-    private int price;
+    private double price;
     private String image;
     private List<RoomFacility> facilities;
 
@@ -34,11 +34,11 @@ public class Room {
         this.type = type;
     }
 
-    public int getPrice() {
+    public double getPrice() {
         return price;
     }
 
-    public void setPrice(int price) {
+    public void setPrice(double price) {
         this.price = price;
     }
 

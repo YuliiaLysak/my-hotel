@@ -19,8 +19,8 @@ public class SearchController {
 
     @GetMapping("/rooms")
     public SearchResult searchAvailableRoom(
-            @RequestParam("checkIn") @DateTimeFormat(iso= DateTimeFormat.ISO.DATE) LocalDate checkIn,
-            @RequestParam("checkOut") @DateTimeFormat(iso= DateTimeFormat.ISO.DATE) LocalDate checkOut) {
+            @RequestParam("checkIn") @DateTimeFormat(iso = DateTimeFormat.ISO.DATE) LocalDate checkIn,
+            @RequestParam("checkOut") @DateTimeFormat(iso = DateTimeFormat.ISO.DATE) LocalDate checkOut) {
 
         return searchService.searchAvailableRoom(checkIn, checkOut);
     }

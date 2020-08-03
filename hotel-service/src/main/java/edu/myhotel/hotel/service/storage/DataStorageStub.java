@@ -19,12 +19,14 @@ public class DataStorageStub implements DataStorage {
         room1.setName("Monday");
         room1.setPrice(1000);
         room1.setImage("https://via.placeholder.com/100");
-        room1.setFacilities(List.of(RoomFacility.SINGLE_BED, RoomFacility.SAFE,
-                                    RoomFacility.SHOWER, RoomFacility.TOWELS,
-                                    RoomFacility.WIFI, RoomFacility.AIR_CONDITION,
-                                    RoomFacility.TEAPOT, RoomFacility.COFFEE_MACHINE,
-                                    RoomFacility.IRON, RoomFacility.HAIRDRYER,
-                                    RoomFacility.MINIBAR, RoomFacility.TV));
+        room1.setFacilities(List.of(
+                RoomFacility.SINGLE_BED, RoomFacility.SAFE,
+                RoomFacility.SHOWER, RoomFacility.TOWELS,
+                RoomFacility.WIFI, RoomFacility.AIR_CONDITION,
+                RoomFacility.TEAPOT, RoomFacility.COFFEE_MACHINE,
+                RoomFacility.IRON, RoomFacility.HAIRDRYER,
+                RoomFacility.MINIBAR, RoomFacility.TV
+        ));
 
         Room room2 = new Room();
         room2.setId(2);
@@ -32,12 +34,14 @@ public class DataStorageStub implements DataStorage {
         room2.setName("Tuesday");
         room2.setPrice(1400);
         room2.setImage("https://via.placeholder.com/100");
-        room2.setFacilities(List.of(RoomFacility.TWIN_BED, RoomFacility.TWIN_BED,
-                                    RoomFacility.SAFE, RoomFacility.SHOWER,
-                                    RoomFacility.TOWELS, RoomFacility.WIFI,
-                                    RoomFacility.AIR_CONDITION, RoomFacility.TEAPOT,
-                                    RoomFacility.IRON, RoomFacility.HAIRDRYER,
-                                    RoomFacility.MINIBAR, RoomFacility.TV));
+        room2.setFacilities(List.of(
+                RoomFacility.TWIN_BED, RoomFacility.TWIN_BED,
+                RoomFacility.SAFE, RoomFacility.SHOWER,
+                RoomFacility.TOWELS, RoomFacility.WIFI,
+                RoomFacility.AIR_CONDITION, RoomFacility.TEAPOT,
+                RoomFacility.IRON, RoomFacility.HAIRDRYER,
+                RoomFacility.MINIBAR, RoomFacility.TV
+        ));
 
         Room room3 = new Room();
         room3.setId(3);
@@ -45,12 +49,14 @@ public class DataStorageStub implements DataStorage {
         room3.setName("Wednesday");
         room3.setPrice(1400);
         room3.setImage("https://via.placeholder.com/100");
-        room3.setFacilities(List.of(RoomFacility.TWIN_BED, RoomFacility.TWIN_BED,
-                                    RoomFacility.SAFE, RoomFacility.SHOWER,
-                                    RoomFacility.TOWELS, RoomFacility.WIFI,
-                                    RoomFacility.AIR_CONDITION, RoomFacility.TEAPOT,
-                                    RoomFacility.IRON, RoomFacility.HAIRDRYER,
-                                    RoomFacility.MINIBAR, RoomFacility.TV));
+        room3.setFacilities(List.of(
+                RoomFacility.TWIN_BED, RoomFacility.TWIN_BED,
+                RoomFacility.SAFE, RoomFacility.SHOWER,
+                RoomFacility.TOWELS, RoomFacility.WIFI,
+                RoomFacility.AIR_CONDITION, RoomFacility.TEAPOT,
+                RoomFacility.IRON, RoomFacility.HAIRDRYER,
+                RoomFacility.MINIBAR, RoomFacility.TV
+        ));
 
         Room room4 = new Room();
         room4.setId(4);
@@ -58,12 +64,14 @@ public class DataStorageStub implements DataStorage {
         room4.setName("Thursday");
         room4.setPrice(1400);
         room4.setImage("https://via.placeholder.com/100");
-        room4.setFacilities(List.of(RoomFacility.DOUBLE_BED, RoomFacility.SAFE,
-                                    RoomFacility.BATHTUB, RoomFacility.TOWELS,
-                                    RoomFacility.WIFI, RoomFacility.AIR_CONDITION,
-                                    RoomFacility.TEAPOT, RoomFacility.COFFEE_MACHINE,
-                                    RoomFacility.IRON, RoomFacility.HAIRDRYER,
-                                    RoomFacility.MINIBAR, RoomFacility.TV));
+        room4.setFacilities(List.of(
+                RoomFacility.DOUBLE_BED, RoomFacility.SAFE,
+                RoomFacility.BATHTUB, RoomFacility.TOWELS,
+                RoomFacility.WIFI, RoomFacility.AIR_CONDITION,
+                RoomFacility.TEAPOT, RoomFacility.COFFEE_MACHINE,
+                RoomFacility.IRON, RoomFacility.HAIRDRYER,
+                RoomFacility.MINIBAR, RoomFacility.TV
+        ));
 
         Room room5 = new Room();
         room5.setId(5);
@@ -71,12 +79,14 @@ public class DataStorageStub implements DataStorage {
         room5.setName("Friday");
         room5.setPrice(1400);
         room5.setImage("https://via.placeholder.com/100");
-        room5.setFacilities(List.of(RoomFacility.DOUBLE_BED, RoomFacility.SAFE,
-                                    RoomFacility.BATHTUB, RoomFacility.TOWELS,
-                                    RoomFacility.WIFI, RoomFacility.AIR_CONDITION,
-                                    RoomFacility.TEAPOT, RoomFacility.COFFEE_MACHINE,
-                                    RoomFacility.IRON, RoomFacility.HAIRDRYER,
-                                    RoomFacility.MINIBAR, RoomFacility.TV));
+        room5.setFacilities(List.of(
+                RoomFacility.DOUBLE_BED, RoomFacility.SAFE,
+                RoomFacility.BATHTUB, RoomFacility.TOWELS,
+                RoomFacility.WIFI, RoomFacility.AIR_CONDITION,
+                RoomFacility.TEAPOT, RoomFacility.COFFEE_MACHINE,
+                RoomFacility.IRON, RoomFacility.HAIRDRYER,
+                RoomFacility.MINIBAR, RoomFacility.TV
+        ));
 
         Room room6 = new Room();
         room6.setId(6);
@@ -84,13 +94,15 @@ public class DataStorageStub implements DataStorage {
         room6.setName("Saturday");
         room6.setPrice(2400);
         room6.setImage("https://via.placeholder.com/100");
-        room6.setFacilities(List.of(RoomFacility.DOUBLE_BED, RoomFacility.TWIN_BED,
-                                    RoomFacility.TWIN_BED,RoomFacility.SAFE,
-                                    RoomFacility.BATHTUB, RoomFacility.SHOWER, RoomFacility.TOWELS,
-                                    RoomFacility.WIFI, RoomFacility.AIR_CONDITION,
-                                    RoomFacility.TEAPOT, RoomFacility.COFFEE_MACHINE,
-                                    RoomFacility.IRON, RoomFacility.HAIRDRYER,
-                                    RoomFacility.MINIBAR, RoomFacility.TV));
+        room6.setFacilities(List.of(
+                RoomFacility.DOUBLE_BED, RoomFacility.TWIN_BED,
+                RoomFacility.TWIN_BED, RoomFacility.SAFE,
+                RoomFacility.BATHTUB, RoomFacility.SHOWER, RoomFacility.TOWELS,
+                RoomFacility.WIFI, RoomFacility.AIR_CONDITION,
+                RoomFacility.TEAPOT, RoomFacility.COFFEE_MACHINE,
+                RoomFacility.IRON, RoomFacility.HAIRDRYER,
+                RoomFacility.MINIBAR, RoomFacility.TV
+        ));
 
         Room room7 = new Room();
         room7.setId(7);
@@ -98,13 +110,15 @@ public class DataStorageStub implements DataStorage {
         room7.setName("Sunday");
         room7.setPrice(3000);
         room7.setImage("https://via.placeholder.com/100");
-        room7.setFacilities(List.of(RoomFacility.DOUBLE_BED, RoomFacility.DOUBLE_BED,
-                                    RoomFacility.TWIN_BED, RoomFacility.TWIN_BED, RoomFacility.SAFE,
-                                    RoomFacility.BATHTUB, RoomFacility.SHOWER, RoomFacility.TOWELS,
-                                    RoomFacility.WIFI, RoomFacility.AIR_CONDITION,
-                                    RoomFacility.TEAPOT, RoomFacility.COFFEE_MACHINE,
-                                    RoomFacility.IRON, RoomFacility.HAIRDRYER,
-                                    RoomFacility.MINIBAR, RoomFacility.TV));
+        room7.setFacilities(List.of(
+                RoomFacility.DOUBLE_BED, RoomFacility.DOUBLE_BED,
+                RoomFacility.TWIN_BED, RoomFacility.TWIN_BED, RoomFacility.SAFE,
+                RoomFacility.BATHTUB, RoomFacility.SHOWER, RoomFacility.TOWELS,
+                RoomFacility.WIFI, RoomFacility.AIR_CONDITION,
+                RoomFacility.TEAPOT, RoomFacility.COFFEE_MACHINE,
+                RoomFacility.IRON, RoomFacility.HAIRDRYER,
+                RoomFacility.MINIBAR, RoomFacility.TV
+        ));
 
         rooms.add(room1);
         rooms.add(room2);
@@ -113,11 +127,65 @@ public class DataStorageStub implements DataStorage {
         rooms.add(room5);
         rooms.add(room6);
         rooms.add(room7);
+
+        BookedRoom bookedRoom1 = new BookedRoom(2,
+                LocalDate.of(2020, 8, 7),
+                LocalDate.of(2020, 8, 9)
+        );
+
+        BookedRoom bookedRoom2 = new BookedRoom(5,
+                LocalDate.of(2020, 8, 21),
+                LocalDate.of(2020, 8, 24)
+        );
+
+        BookedRoom bookedRoom3 = new BookedRoom(5,
+                LocalDate.of(2020, 8, 28),
+                LocalDate.of(2020, 9, 4)
+        );
+
+        BookedRoom bookedRoom4 = new BookedRoom(7,
+                LocalDate.of(2020, 10, 23),
+                LocalDate.of(2020, 10, 31)
+        );
+
+        bookedRooms.add(bookedRoom1);
+        bookedRooms.add(bookedRoom2);
+        bookedRooms.add(bookedRoom3);
+        bookedRooms.add(bookedRoom4);
     }
 
     @Override
     public List<Room> findAvailableRooms(LocalDate checkIn, LocalDate checkOut) {
-        return rooms;
+        List<Room> availableRooms = new ArrayList<>();
+
+        for (Room room : rooms) {
+            int currentRoomId = room.getId();
+            boolean isAvailable = true;
+            List<BookedRoom> currentBookings = new ArrayList<>();
+            for (BookedRoom bookedRoom : bookedRooms) {
+                if (currentRoomId == bookedRoom.getRoomId()) {
+                    currentBookings.add(bookedRoom);
+                }
+            }
+            for (BookedRoom currentBooking : currentBookings) {
+                if (isDateOverlapping(
+                        currentBooking.getCheckIn(),
+                        currentBooking.getCheckOut(),
+                        checkIn,
+                        checkOut)) {
+                    isAvailable = false;
+                    break;
+                }
+            }
+            if (isAvailable) {
+                availableRooms.add(room);
+            }
+        }
+        return availableRooms;
+    }
+
+    private boolean isDateOverlapping(LocalDate start1, LocalDate end1, LocalDate start2, LocalDate end2) {
+        return start2.isBefore(end1) && end2.isAfter(start1);
     }
 
     public List<BookedRoom> findBookedRooms() {
