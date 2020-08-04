@@ -8,4 +8,5 @@ import java.util.List;
 public interface DataStorage {
 
     List<Room> findAvailableRooms(LocalDate checkIn, LocalDate checkOut);
+    Room getRoomById(int roomId);
 }

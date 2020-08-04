@@ -1,16 +1,20 @@
-package edu.myhotel.hotel.service.storage;
+package edu.myhotel.hotel.service.services;
+
+import edu.myhotel.hotel.service.storage.RoomFacility;
+import edu.myhotel.hotel.service.storage.RoomType;
 
 import java.util.List;
 
-public class Room {
+public class RoomDetailInfo {
     private int id;
-    private RoomType type;
     private String name;
-    private double price;
+    private RoomType type;
     private String primaryImage;
     private List<String> images;
+    private double price;
     private List<RoomFacility> facilities;
-
+    private String checkInPolicy;
+    private String checkOutPolicy;
 
     public int getId() {
         return id;
@@ -36,14 +40,6 @@ public class Room {
         this.type = type;
     }
 
-    public double getPrice() {
-        return price;
-    }
-
-    public void setPrice(double price) {
-        this.price = price;
-    }
-
     public String getPrimaryImage() {
         return primaryImage;
     }
@@ -60,11 +56,35 @@ public class Room {
         this.images = images;
     }
 
+    public double getPrice() {
+        return price;
+    }
+
+    public void setPrice(double price) {
+        this.price = price;
+    }
+
     public List<RoomFacility> getFacilities() {
         return facilities;
     }
 
     public void setFacilities(List<RoomFacility> facilities) {
         this.facilities = facilities;
+    }
+
+    public String getCheckInPolicy() {
+        return checkInPolicy;
+    }
+
+    public void setCheckInPolicy(String checkInPolicy) {
+        this.checkInPolicy = checkInPolicy;
+    }
+
+    public String getCheckOutPolicy() {
+        return checkOutPolicy;
+    }
+
+    public void setCheckOutPolicy(String checkOutPolicy) {
+        this.checkOutPolicy = checkOutPolicy;
     }
 }
