@@ -247,13 +247,11 @@ public class DataStorageStub implements DataStorage {
 
     @Override
     public Room getRoomById(int roomId) {
-        Room current = null;
         for (Room room : rooms) {
             if (roomId == room.getId()) {
-                current = room;
-                break;
+                return room;
             }
         }
-        return current;
+        return null;
     }
 }
