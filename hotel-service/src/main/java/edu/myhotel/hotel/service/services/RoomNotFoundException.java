@@ -3,10 +3,9 @@ package edu.myhotel.hotel.service.services;
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.ResponseStatus;
 
-@ResponseStatus(code = HttpStatus.BAD_REQUEST)
-public class InvalidDateException extends RuntimeException {
-
-    public InvalidDateException(String message) {
+@ResponseStatus(code = HttpStatus.NOT_FOUND)
+public class RoomNotFoundException extends RuntimeException {
+    public RoomNotFoundException(String message) {
         super(message);
     }
 }

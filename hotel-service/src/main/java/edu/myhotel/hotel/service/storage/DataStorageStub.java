@@ -18,7 +18,14 @@ public class DataStorageStub implements DataStorage {
         room1.setType(RoomType.SINGLE);
         room1.setName("Monday");
         room1.setPrice(1000);
-        room1.setImage("https://via.placeholder.com/100");
+        room1.setPrimaryImage("https://via.placeholder.com/100");
+        room1.setImages(List.of(
+                "https://via.placeholder.com/500",
+                "https://via.placeholder.com/500",
+                "https://via.placeholder.com/500",
+                "https://via.placeholder.com/500",
+                "https://via.placeholder.com/500"
+        ));
         room1.setFacilities(List.of(
                 RoomFacility.SINGLE_BED, RoomFacility.SAFE,
                 RoomFacility.SHOWER, RoomFacility.TOWELS,
@@ -33,7 +40,14 @@ public class DataStorageStub implements DataStorage {
         room2.setType(RoomType.TWIN);
         room2.setName("Tuesday");
         room2.setPrice(1400);
-        room2.setImage("https://via.placeholder.com/100");
+        room2.setPrimaryImage("https://via.placeholder.com/100");
+        room2.setImages(List.of(
+                "https://via.placeholder.com/500",
+                "https://via.placeholder.com/500",
+                "https://via.placeholder.com/500",
+                "https://via.placeholder.com/500",
+                "https://via.placeholder.com/500"
+        ));
         room2.setFacilities(List.of(
                 RoomFacility.TWIN_BED, RoomFacility.TWIN_BED,
                 RoomFacility.SAFE, RoomFacility.SHOWER,
@@ -48,7 +62,14 @@ public class DataStorageStub implements DataStorage {
         room3.setType(RoomType.TWIN);
         room3.setName("Wednesday");
         room3.setPrice(1400);
-        room3.setImage("https://via.placeholder.com/100");
+        room3.setPrimaryImage("https://via.placeholder.com/100");
+        room3.setImages(List.of(
+                "https://via.placeholder.com/500",
+                "https://via.placeholder.com/500",
+                "https://via.placeholder.com/500",
+                "https://via.placeholder.com/500",
+                "https://via.placeholder.com/500"
+        ));
         room3.setFacilities(List.of(
                 RoomFacility.TWIN_BED, RoomFacility.TWIN_BED,
                 RoomFacility.SAFE, RoomFacility.SHOWER,
@@ -63,7 +84,14 @@ public class DataStorageStub implements DataStorage {
         room4.setType(RoomType.DOUBLE);
         room4.setName("Thursday");
         room4.setPrice(1400);
-        room4.setImage("https://via.placeholder.com/100");
+        room4.setPrimaryImage("https://via.placeholder.com/100");
+        room4.setImages(List.of(
+                "https://via.placeholder.com/500",
+                "https://via.placeholder.com/500",
+                "https://via.placeholder.com/500",
+                "https://via.placeholder.com/500",
+                "https://via.placeholder.com/500"
+        ));
         room4.setFacilities(List.of(
                 RoomFacility.DOUBLE_BED, RoomFacility.SAFE,
                 RoomFacility.BATHTUB, RoomFacility.TOWELS,
@@ -78,7 +106,14 @@ public class DataStorageStub implements DataStorage {
         room5.setType(RoomType.DOUBLE);
         room5.setName("Friday");
         room5.setPrice(1400);
-        room5.setImage("https://via.placeholder.com/100");
+        room5.setPrimaryImage("https://via.placeholder.com/100");
+        room5.setImages(List.of(
+                "https://via.placeholder.com/500",
+                "https://via.placeholder.com/500",
+                "https://via.placeholder.com/500",
+                "https://via.placeholder.com/500",
+                "https://via.placeholder.com/500"
+        ));
         room5.setFacilities(List.of(
                 RoomFacility.DOUBLE_BED, RoomFacility.SAFE,
                 RoomFacility.BATHTUB, RoomFacility.TOWELS,
@@ -93,7 +128,14 @@ public class DataStorageStub implements DataStorage {
         room6.setType(RoomType.QUAD);
         room6.setName("Saturday");
         room6.setPrice(2400);
-        room6.setImage("https://via.placeholder.com/100");
+        room6.setPrimaryImage("https://via.placeholder.com/100");
+        room6.setImages(List.of(
+                "https://via.placeholder.com/500",
+                "https://via.placeholder.com/500",
+                "https://via.placeholder.com/500",
+                "https://via.placeholder.com/500",
+                "https://via.placeholder.com/500"
+        ));
         room6.setFacilities(List.of(
                 RoomFacility.DOUBLE_BED, RoomFacility.TWIN_BED,
                 RoomFacility.TWIN_BED, RoomFacility.SAFE,
@@ -109,7 +151,14 @@ public class DataStorageStub implements DataStorage {
         room7.setType(RoomType.SUITE);
         room7.setName("Sunday");
         room7.setPrice(3000);
-        room7.setImage("https://via.placeholder.com/100");
+        room7.setPrimaryImage("https://via.placeholder.com/100");
+        room7.setImages(List.of(
+                "https://via.placeholder.com/500",
+                "https://via.placeholder.com/500",
+                "https://via.placeholder.com/500",
+                "https://via.placeholder.com/500",
+                "https://via.placeholder.com/500"
+        ));
         room7.setFacilities(List.of(
                 RoomFacility.DOUBLE_BED, RoomFacility.DOUBLE_BED,
                 RoomFacility.TWIN_BED, RoomFacility.TWIN_BED, RoomFacility.SAFE,
@@ -194,5 +243,15 @@ public class DataStorageStub implements DataStorage {
 
     public void bookRoom(int roomId, LocalDate checkIn, LocalDate checkOut) {
         bookedRooms.add(new BookedRoom(roomId, checkIn, checkOut));
+    }
+
+    @Override
+    public Room getRoomById(int roomId) {
+        for (Room room : rooms) {
+            if (roomId == room.getId()) {
+                return room;
+            }
+        }
+        return null;
     }
 }
